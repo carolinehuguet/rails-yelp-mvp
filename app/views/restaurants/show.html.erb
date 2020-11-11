@@ -22,7 +22,7 @@
 
 <ul>
   <% @restaurant.reviews.each do |review| %>
-    <li><%= review.content %> - <%= link_to "Destroy", review_path(review), method: :delete, data: { confirm: "T'es tu sûr ?" } %></li>
+    <li><%= review.content %></li>
   <% end %>
 </ul>
 
